@@ -27,3 +27,24 @@ test('validate4', () => {
     const result = validator.validateUsername(username);
     expect(result).toBe(false);
 })
+
+test('validate5', () => {
+    const username = '123KapTowka';
+    const validator = new Validator();
+    const result = validator.validateUsername(username);
+    expect(result).toBe(false);
+})
+
+test('validate6', () => {
+    const username = 'A1234A';
+    const validator = new Validator();
+    const result = validator.validateUsername(username);
+    expect(result).toBe(false);
+})
+
+test('validate6', () => {
+    const username = null;
+    const validator = new Validator();
+    const result = validator.validateUsername(username);
+    expect(result).toBe(false);
+})
