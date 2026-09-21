@@ -25,5 +25,5 @@ test('validate4', () => {
     const username = 'MopkoBka55';
     const validator = new Validator();
     const result = validator.validateUsername(username);
-    expect(result).toBe(true);
+    expect(result).toBe(false);
 })

@@ -3,7 +3,7 @@ class Validator {
     this.name = name;
     if (!this.name) return false;
 
-    return /^(?![-_])(?!\d{3})[a-zA-Z0-9_-]+(?<![-_])(?<!\d{3})$/.test(this.name);
+    return /^(?![-_\d])(?!.*\d{4})[a-zA-Z0-9_-]+(?<![-_\d])$/.test(this.name);
   }
 }
 
